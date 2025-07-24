@@ -28,6 +28,8 @@ print("Division : ",Division)
 
 
 
+
+
 TASK 2:
 
 Task 2: Create a Personalized Greeting
@@ -196,6 +198,64 @@ print("Final content of output.txt:")
 with open("output.txt", "r") as file:
     for line in file:
         print(line.strip())
+
+
+
+ASSIGNMENT 5:
+Module 6: Data Structures and Strings in Python
+ 
+Task 9: Create a Dictionary of Student Marks
+
+Problem Statement: Write a Python program that:
+1.   Creates a dictionary where student names are keys and their marks are values.
+2.   Asks the user to input a student's name.
+3.   Retrieves and displays the corresponding marks.
+4.   If the student’s name is not found, display an appropriate message.
+
+PYTHHON CODE:
+
+student_marks = {
+    "omkar": 85,
+    "mayank": 92,
+    "rahul": 78,
+    "abhishek": 90,
+    "chutka": 88
+}
+
+student_name = input("Enter the student's name: ")
+
+if student_name in student_marks:
+    print(f"{student_name}'s marks: {student_marks[student_name]}")
+else:
+    print(f"Student '{student_name}' not found in the records.")
+
+
+Task 10: Demonstrate List Slicing 
+Problem Statement: Write a Python program that:
+1.   Creates a list of numbers from 1 to 10.
+2.   Extracts the first five elements from the list.
+3.   Reverses these extracted elements.
+4.   Prints both the extracted list and the reversed list
+
+
+PYTHON CODE:
+
+numbers = list(range(1, 11))
+
+first_five = numbers[:5]
+
+reversed_first_five = first_five[::-1]
+
+print("Original list of numbers:", numbers)
+print("First five elements:", first_five)
+print("Reversed extracted elements:", reversed_first_five)
+
+
+
+
+
+
+
 
 
     
