@@ -96,6 +96,64 @@ print("The sum of numbers from 1 to 50 is:", x)
 
 
 
+ASSIGNMENT 3:
+
+Module 4: Functions & Modules in Python 
+
+
+Task 5: Calculate Factorial Using a Function 
+
+
+Problem Statement: Write a Python program that:
+1.   Defines a function named factorial that takes a number as an argument and calculates its factorial using a loop or recursion.
+2.   Returns the calculated factorial.
+3.   Calls the function with a sample number and prints the output.
+
+CODE:
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+num = 5
+print("Factorial of", num, "is:", factorial(num))
+
+
+
+
+Task 6: Using the Math Module for Calculations
+ 
+Problem Statement: Write a Python program that:
+1.   Asks the user for a number as input.
+2.   Uses the math module to calculate the:
+o   Square root of the number
+o   Natural logarithm (log base e) of the number
+o   Sine of the number (in radians)
+3.   Displays the calculated results.
+
+CODE:
+
+import math
+
+num = float(input("Enter a number: "))
+
+sqrt_result = math.sqrt(num)
+log_result = math.log(num)
+sine_result = math.sin(num)
+
+print("Square root:", sqrt_result)
+print("Natural logarithm (ln):", log_result)
+print("Sine (in radians):", sine_result)
+
+
+
+
+
+
+
+
 
 
 
